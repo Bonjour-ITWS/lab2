@@ -27,7 +27,10 @@ h4
     margin-right: 300px;
 }
  
-.firstAmendment p
+
+
+/*This gives the formatting for the innerhtml*/ 
+#firstAmendment 
 {
     font-family: 'Times New Roman', Times, serif;
     font-size: 15pt;
