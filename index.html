@@ -3,10 +3,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resources/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="resources/replace.js"></script>
+    <link rel="stylesheet" href="resources/style.css">
     <title>The US Constitution</title>
 </head>
 <body>
@@ -249,8 +250,10 @@
     <br>
     
     <h1>First Amendment</h1>
+    <input id="clickMe" type="button" value="clickme" onclick="buttonfunction();" />
+    <div id = "firstAmendment">
     <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. </p>
-
+    </div>
     <h1>Second Amendment</h1>
     <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms shall not be infringed. </p>
 
@@ -278,6 +281,17 @@
     <h1>Tenth Amendment</h1>
     <p>The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.</p>
 
+
+    <script>
+        function buttonfunction() {
+            var x = document.getElementById("firstAmendment")
+            if (x.innerHTML === "Although self care is sometimes hard, here are a few easy things that can help you get better at self care. The first and most improtant self care tip, according to me at least, is sleep. Sleep effects a person on both an emotional and physical level, making it important to prioritize. Keeping away from caffine and sugar before bed and reducing stress can help you sleep better too! Its also important to exercise. Exercise can keep you in shape and releases endorphins, which makes you a happier person! If it is possible, you should totally exercise outside, because it can make you feel revitalized and energetic. Nature itself is super good and benefits the brain. It has similar effects as meditation, and some studies say that even pictures of nature can help.") {
+                x.innerHTML = "It is important to note that what works for some will not work for everyone. Your feelings are valid and important, as are everyone elses. So, here are some ways to help cope with depression: First, it is very important to find people to support you who you are comfortable talking too as well as something (a plant or pet) that can bring you outside yourself and will need you. Its also important to do things that make you feel good, take a shower or a bath, sleep enough, meditate, or even just watch a funny tv show. Another important thing is to eat healthy, a vitamin B deficiency could trigger depression. For anxiety: Eat well balanced meals, any sort of fluxuation on chemicals in you brain could make you more anxious. Limit alchol and caffine, both of which can aggrivate anxiety and cause panic attacks. Sleeping enough could also help you think clearly and keep from overthinking a situation. ";
+            } else {
+                x.innerHTML = "Although self care is sometimes hard, here are a few easy things that can help you get better at self care. The first and most improtant self care tip, according to me at least, is sleep. Sleep effects a person on both an emotional and physical level, making it important to prioritize. Keeping away from caffine and sugar before bed and reducing stress can help you sleep better too! Its also important to exercise. Exercise can keep you in shape and releases endorphins, which makes you a happier person! If it is possible, you should totally exercise outside, because it can make you feel revitalized and energetic. Nature itself is super good and benefits the brain. It has similar effects as meditation, and some studies say that even pictures of nature can help.";
+            }
+        }
+    </script>
 
 </body>
 </html>
