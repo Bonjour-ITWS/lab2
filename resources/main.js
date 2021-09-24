@@ -4,6 +4,32 @@
 
 //<script src="script.js" type="/resources/main.js"></script>
 
+function myArticles12(){
+
+    var x = document.getElementById("Articles12");
+    if (x.innerHTML == "Summary of Articles 1 & 2") {
+        x.innerHTML = "The articles of confederation is a way to display solidarity among soverign states. This loose union, a confederacy, will allow states to maintain their own rights, privledges and powers while on the condition that they remain part of the confederacy. The Articles of Confederation places a significant amount of power in the hands of a central government while maintaining soverign state powers. Hwoever, the Articles of Confederation remain open to interpretation today-- some say that the Articles of Confederation was a loose union between 13 soverign states in the allegiance of self-defense from Britain. That union, according to some, only exists for the sole purpose of an outside attack-- not for the entire globalization of a single country. The debate between state and federal power remains a disucssion today that stems from these very Articles of Confederation."
+        ;
+    } else {
+        x.innerHTML = "Summary of Articles 1 & 2";
+    }
+
+
+}
+
+function myArticles34(){
+
+    var x = document.getElementById("Articles34");
+    if (x.innerHTML == "Summary of Articles 3 & 4") {
+        x.innerHTML = "States must seek to help each other. By coercing all members of the union to help one another when they need it, the union ensures its success through divisive times. These articles emphasize that a citizen of one state is a citizen of another state. They also point to the roots of the American free market. By ensuring trade and seamless interpersonal relations with other soverign states, the efficient market begins to develop into the US economy")
+        ;
+    } else {
+        x.innerHTML = "Summary of Articles 3 & 4";
+    }
+
+
+}
+
 
 function myFunction() {
     var x = document.getElementById("firstAmendment");
@@ -49,7 +75,7 @@ function myFifthAmend() {
         x.innerHTML = "No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation. ";
     }
   
-  function mySixthAmend() {
+function mySixthAmend() {
     var x = document.getElementById("sixthAmendment");
     if (x.innerHTML == "In all criminal prosecutions, the accused shall enjoy the right to a speedy and public trial, by an impartial jury of the State and district wherein the crime shall have been committed, which district shall have been previously ascertained by law, and to be informed of the nature and cause of the accusation; to be confronted with the witnesses against him; to have compulsory process for obtaining witnesses in his favor, and to have the Assistance of Counsel for his defence.") {
         x.innerHTML = "Right to a speedy trial.";
