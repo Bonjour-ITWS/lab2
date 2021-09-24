@@ -3,15 +3,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <script type = "text/javascript" src="resources/main.js"></script>
     <link rel="stylesheet" href="resources/style.css">
+    <style>
+        .collapsible {
+          background-color: #987654;
+          color: black;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+        }
+        
+        .active, .collapsible:hover {
+          background-color: #555;
+        }
+        
+        .content {
+          padding: 0 18px;
+          display: none;
+          overflow: hidden;
+          background-color: #f1f1f1;
+        }
+        </style>
     <title>The US Constitution</title>
 </head>
 <body>
     <h1>The Preamble</h1>
 
     <p>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+
+    <button type="button" class="collapsible">Summary of Articles 1 & 2</button>
+    <div class="content">
+        <p>The articles of confederation is a way to display solidarity among soverign states. This loose union, a confederacy, will allow states to maintain their own rights, privledges and powers while on the condition that they remain part of the confederacy. The Articles of Confederation places a significant amount of power in the hands of a central government while maintaining soverign state powers. Hwoever, the Articles of Confederation remain open to interpretation today-- some say that the Articles of Confederation was a loose union between 13 soverign states in the allegiance of self-defense from Britain. That union, according to some, only exists for the sole purpose of an outside attack-- not for the entire globalization of a single country. The debate between state and federal power remains a disucssion today that stems from these very Articles of Confederation.</p>
+    </div>
 
     <h1>Article I</h1>
     <h4>Section 1</h4>
@@ -168,7 +196,10 @@
     <p>The President, Vice President and all civil Officers of the United States, shall be removed from Office on Impeachment for, and Conviction of, Treason, Bribery, or other high Crimes and Misdemeanors.</p>
 
 
-    <p id = "Articles12"> Summary of Articles 1 & 2</p>
+    <button type="button" class="collapsible">Summary of Articles 3 & 4</button>
+    <div class="content">
+        <p>States must seek to help each other. By coercing all members of the union to help one another when they need it, the union ensures its success through divisive times. These articles emphasize that a citizen of one state is a citizen of another state. They also point to the roots of the American free market. By ensuring trade and seamless interpersonal relations with other soverign states, the efficient market begins to develop into the US economy.</p>
+    </div>
 
 
 
@@ -208,7 +239,11 @@
     <p>The United States shall guarantee to every State in this Union a Republican Form of Government, and shall protect each of them against Invasion; and on Application of the Legislature, or of the Executive (when the Legislature cannot be convened) against domestic Violence.</p>
 
 
-    <p id = "Articles34"> Summary of Articles 3 & 4</p>
+    <button type="button" class="collapsible">Summary of Articles 5 & 6</button>
+    <div class="content">
+        <p>Each state has one vote in Congress irrespective of the number of delegates sent. These articles ensure perfect voting power should the collective union need to decide on something that requires the attention of all. These articles define the ubiquitous American "Freedom of Speech" that many are familiar with. Article 6 talks about the denial of power of states to reach out to foreign countries. This article is solely focused on eliminating the possiblities of collusion with foreign soverign states.</p>
+    </div> 
+
     <h1>Article V</h1>
     <p>The Congress, whenever two thirds of both Houses shall deem it necessary, shall propose Amendments to this Constitution, or, on the Application of the Legislatures of two thirds of the several States, shall call a Convention for proposing Amendments, which, in either Case, shall be valid to all Intents and Purposes, as Part of this Constitution, when ratified by the Legislatures of three fourths of the several States, or by Conventions in three fourths thereof, as the one or the other Mode of Ratification may be proposed by the Congress; Provided that no Amendment which may be made prior to the Year One thousand eight hundred and eight shall in any Manner affect the first and fourth Clauses in the Ninth Section of the first Article; and that no State, without its Consent, shall be deprived of its equal Suffrage in the Senate.</p>
 
@@ -218,6 +253,12 @@
         This Constitution, and the Laws of the United States which shall be made in Pursuance thereof; and all Treaties made, or which shall be made, under the Authority of the United States, shall be the supreme Law of the Land; and the Judges in every State shall be bound thereby, any Thing in the Constitution or Laws of any State to the Contrary notwithstanding.
         
         The Senators and Representatives before mentioned, and the Members of the several State Legislatures, and all executive and judicial Officers, both of the United States and of the several States, shall be bound by Oath or Affirmation, to support this Constitution; but no religious Test shall ever be required as a Qualification to any Office or public Trust under the United States.</p>
+
+        
+    <button type="button" class="collapsible">Summary of Article 7</button>
+    <div class="content">
+    <p>The common treasury of the United States can be used based on Congress's approval. However, in-state taxation is based on state's personal choice. "Taxation without Representation" was a rallying call of the American Revolution and one of the major points of succession from Britain in the first place.</p>
+    </div> 
 
     <h1>Article VII</h1>
     <p>The Ratification of the Conventions of nine States, shall be sufficient for the Establishment of this Constitution between the States so ratifying the Same.
@@ -309,9 +350,21 @@
     </div>
 
 
-
-
-
-
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+</script>        
 </body>
 </html>
