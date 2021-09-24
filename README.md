@@ -1,6 +1,9 @@
 # Lab 2
-Lab 2: Adding structure and formatting to the the Constitution with HTML 
 
--Initialized with Index.html and a CSS file
-
-*Still need to add the annotations and more extensive styling through CSS*
+-Final Page Build Includes:
+   
+   -Constitution document formatted with HTML
+   -Styled with CSS (Width of Paragraphs/Parchment-like background image)
+   -"Collapsibles": Buttons on the site that when clicked reveal summaries about a given article of the consitution
+   -"The Simplify Button": Button that changes the text in real-time, displaying a simpler version of a given amendment to the user
+   -Site hosted through Github Pages via this link: https://bonjour-itws.github.io/lab2/
