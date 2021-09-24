@@ -249,21 +249,35 @@
     <br>
     <br>
     
-    <h1>First Amendment</h1>
-    <input id="clickMe" type="button" value="clickme" onclick="buttonfunction();" />
-    <div id = "firstAmendment">
-    <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. </p>
+    <div class="tooltip">
+    <h1 style="text-align: center;">First Amendment</h1>
+        <span class="tooltiptext">Freedom of speech, press, right to assemble, petition.</span>
     </div>
-    <h1>Second Amendment</h1>
-    <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms shall not be infringed. </p>
+    <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. </p>
 
-    <h1>Third Amendment</h1>
+    <div class="tooltip">
+    <h1 style="text-align: center;">Second Amendment</h1>
+        <span class="tooltiptext">Right to bear arms</span>
+    </div>
+        <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms shall not be infringed. </p>
+
+    <div class="tooltip">
+    <h1 style="text-align: center;">Third Amendment</h1>
+        <span class="tooltiptext">Soldier housing will only happen during times of war</span>
+    </div>
     <p>No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.    </p>
+    
 
-    <h1>Fourth Amendment</h1>
+    <div class="tooltip">
+    <h1 style="text-align: center;">Fourth Amendment</h1>
+        <span class="tooltiptext">Search warrants are required to search personal property</span>
+    </div>
     <p>The right of the people to be secure in their persons, houses, papers, and effects, against unreasonable searches and seizures, shall not be violated, and no Warrants shall issue, but upon probable cause, supported by Oath or affirmation, and particularly describing the place to be searched, and the persons or things to be seized.    </p>
 
-    <h1>Fifth Amendment</h1>
+    <div class="tooltip">
+    <h1 style="text-align: center;">Fifth Amendment</h1>
+        <span class="tooltiptext">Innocent Until Proven Guilty by the judicial system</span>
+    </div>
     <p>No person shall be held to answer for a capital, or otherwise infamous crime, unless on a presentment or indictment of a Grand Jury, except in cases arising in the land or naval forces, or in the Militia, when in actual service in time of War or public danger; nor shall any person be subject for the same offence to be twice put in jeopardy of life or limb; nor shall be compelled in any criminal case to be a witness against himself, nor be deprived of life, liberty, or property, without due process of law; nor shall private property be taken for public use, without just compensation.</p>
 
     <h1>Sixth Amendment</h1>
@@ -280,18 +294,6 @@
 
     <h1>Tenth Amendment</h1>
     <p>The powers not delegated to the United States by the Constitution, nor prohibited by it to the States, are reserved to the States respectively, or to the people.</p>
-
-
-    <script>
-        function buttonfunction() {
-            var x = document.getElementById("firstAmendment")
-            if (x.innerHTML == "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. ") {
-                x.innerHTML = "Freedom of speech, press, right to assemble, petition.";
-            } else {
-                x.innerHTML = "Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances. ";
-            }
-        }
-    </script>
 
 </body>
 </html>
